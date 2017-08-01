@@ -1,0 +1,149 @@
+<!-- TWO -->
+
+<body>
+<img id="image" src="1.png"/>
+<br><br><br>
+<button id="2p" style="width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="changeImage();">Hello</button>
+</body>
+
+<script>
+
+var num_clicked = 0;
+// *･ﾟﾟ･*:.｡..｡.:*ﾟ:*:✼✿FOR POSITIVE ANSWER✿✼:*ﾟ:.｡..｡.:*･ﾟﾟ･*
+function changeImage()
+{
+console.log(num_clicked)
+if (num_clicked == 0)
+{
+var img = document.getElementById("image");
+img.src="2 positive.png";
+document.getElementById("2p").style.visibility = 'hidden';
+document.getElementById("3contPOSITIVE").style.visibility = 'visible';
+
+}
+// DONT DELETE THE THING BELOW BC I TRIED TO DELETE IT AND IT SCREWED EVEYRTHING UP
+}
+
+// TO MAKE IT D I S A P P E A R 
+function contPOSITIVE()
+{
+document.getElementById("2p").style.visibility = 'hidden';
+document.getElementById("3contPOSITIVE").style.visibility = 'visible';
+}
+
+function contNEGATIVE()
+{
+document.getElementById("2n").style.visibility = 'hidden';
+document.getElementById("2p").style.visibility = 'hidden';
+document.getElementById("3contNEGATIVE").style.visibility = 'visible';
+}
+
+function cont3positive()
+{
+document.getElementById("3contPOSITIVE").style.visibility = 'hidden';
+document.getElementById("4response").style.visibility = 'visible';
+document.getElementById("4negativeresponse").style.visibility = 'visible';
+}
+
+function cont3negative()
+{
+document.getElementById("3contPOSITIVE").style.visibility = 'hidden';
+document.getElementById("4response").style.visibility = 'visible';
+document.getElementById("4negativeresponse").style.visibility = 'visible';
+}
+
+function busyyy()
+{
+document.getElementById("4response").style.visibility = 'hidden';
+document.getElementById("lastonebusy").style.visibility = 'visible';
+}
+
+function contact()
+{
+document.getElementById("4negativeresponse").style.visibility = 'hidden';
+document.getElementById("lastonecontact").style.visibility = 'visible';
+}
+
+// *･ﾟﾟ･*:.｡..｡.:*ﾟ:*:✼✿FOR NEGATIVE ANSWER✿✼:*ﾟ:.｡..｡.:*･ﾟﾟ･*
+function changeImage1()
+{
+var img = document.getElementById("image");
+img.src="2 negative.png";
+return false;
+}
+
+
+</script>
+
+</head>
+<body>
+<br><br><br>
+<button id="2n" style="width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="changeImage1();contNEGATIVE();">Who's this?</button>
+</body>
+</html>
+
+
+
+<!-- THREE -->
+<!-- IMAGES -->
+<script>
+
+function changeImage3n()
+{
+var img = document.getElementById("image");
+img.src="3 n response.png";
+return false;
+}
+
+function changeImage3()
+{
+var img = document.getElementById("image");
+img.src="3.png";
+}
+
+function iwasbusy()
+{
+var img = document.getElementById("image");
+img.src="4 positive.png";
+}
+
+function youdidnt()
+{
+var img = document.getElementById("image");
+img.src="4 negative.png";
+}
+
+function busycont()
+{
+var img = document.getElementById("image");
+img.src="5.png";
+}
+
+function youdidntcont()
+{
+var img = document.getElementById("image");
+img.src="5 n response.png";
+}
+
+</script>
+
+
+<!-- CONTINUED BUTTON -->
+<body>
+<br><br><br>
+
+<button id="3contPOSITIVE" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="changeImage3();cont3positive();">...</button><br><br>
+
+<button id="3contNEGATIVE" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="changeImage3n();cont3negative();">...</button>
+
+
+<!-- *･ﾟﾟ･*:.｡..｡.:*ﾟ:*:✼✿FOR POSITIVE ANSWER✿✼:*ﾟ:.｡..｡.:*･ﾟﾟ･* -->
+<button id="4response" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="iwasbusy(); busyyy();">I was busy</button>
+
+
+<button id="4negativeresponse" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="youdidnt();contact();">You didn't contact me.</button>
+</body>
+
+<button id="lastonebusy" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="busycont(); busyyy();">...</button><br><br>
+
+<button id="lastonecontact" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="youdidntcont();contact()">...</button><br><br>

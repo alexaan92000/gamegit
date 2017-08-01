@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+
+
+function noHatecont()
+{
+	document.getElementById("startOfConvo").style.visibility = 'hidden';
+	document.getElementById("2ndfirst").style.visibility = 'visible';
+	document.getElementById("2ndsecond").style.visibility = 'visible';
+}
+
+function noHatecont()
+{
+	document.getElementById("startOfConvo").style.visibility = 'hidden';
+	document.getElementById("2ndfirst").style.visibility = 'visible';
+	document.getElementById("2ndsecond").style.visibility = 'visible';
+}
+
+
+
+function startOfConvo ()
+{
+var img = document.getElementById ("start");
+img.src="quotejoking response.png";
+}
+
+function secondResponse ()
+{
+var img = document.getElementById ("start");
+img.src="jerk response.png";
+}
+
+function secondOption1 ()
+{
+var img = document.getElementById ("start");
+img.src="belittling.png";
+}
+
+function secondOption2 ()
+{
+var img = document.getElementById ("start");
+img.src="jerk.png";
+}
+
+function belittlingResponse ()
+{
+var img = document.getElementById ("start");
+img.src="belittling response.png";
+}
+
+
+</script>
+
+<img id="start"  src="quotejoking.png"/>
+
+<body>
+
+
+<button id="startOfConvo" style="width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" 
+onclick="startOfConvo();noHatecont()">...</button>
+
+<button id="secondResponce" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" 
+onclick="secondResponse();noHatecont1()">Don't know what i'm doing</button>
+
+<button id="2ndfirst" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" 
+onclick="secondOption1();noHatecont();">you're belittling me</button>
+</button>
+
+<button id="2ndsecond" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" 
+onclick="secondOption2();noHatecont();">You're being a jerk</button>
+
+<button id="belittlingResponse" style=" width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" 
+onclick="belittlingResponse();">...</button>
+
+
+
+
+
+
+
+
+
+
+
+</body>
