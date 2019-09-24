@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<!-- FUNCTIONS -->
+<script>
+
+
+// FINISHED
+function imageNoHate()
+{
+var img = document.getElementById("start");
+img.src="no hate.png";
+}
+function noHatecont()
+{
+document.getElementById("no hate").style.visibility = 'hidden';
+document.getElementById("whoever").style.visibility = 'hidden';
+document.getElementById("noHatecont").style.visibility = 'visible';
+}
+function imageNoHateresponse()
+{
+var img = document.getElementById("start");
+img.src="no hate response.png";
+}
+function NoHateresponsecont()
+{
+document.getElementById("noHatecont").style.visibility = 'hidden';
+document.getElementById("start2nohate").style.visibility = 'visible';
+}
+
+
+// FINISHED
+function imageWhoever()
+{
+var img = document.getElementById("start");
+img.src="whoever.png";
+}
+function whoevercont()
+{
+document.getElementById("whoever").style.visibility = 'hidden';
+document.getElementById("no hate").style.visibility = 'hidden';
+document.getElementById("whoevercont").style.visibility = 'visible';
+}
+function imageWhoeverresponse()
+{
+var img = document.getElementById("start");
+img.src="whoever response.png";
+}
+function Whoeverresponsecont()
+{
+document.getElementById("whoevercont").style.visibility = 'hidden';
+document.getElementById("start2whoever").style.visibility = 'visible';
+}
+
+
+// FINISHED
+function image7whoever()
+{
+var img = document.getElementById("start");
+img.src="7 whoever.png";
+}
+function image7nohate()
+{
+var img = document.getElementById("start");
+img.src="7 no hate.png";
+}
+function start3optionsnohate()
+{
+document.getElementById("start2nohate").style.visibility = 'hidden';
+document.getElementById("compliment").style.visibility = 'visible';
+document.getElementById("sarcastic").style.visibility = 'visible';
+}
+function start3optionswhoever()
+{
+document.getElementById("start2whoever").style.visibility = 'hidden';
+document.getElementById("compliment").style.visibility = 'visible';
+document.getElementById("sarcastic").style.visibility = 'visible';
+}
+
+
+// FINISHED
+function imagecompliment()
+{
+var img = document.getElementById("start");
+img.src="compliment.png";
+}
+function complimentcont()
+{
+document.getElementById("compliment").style.visibility = 'hidden';
+document.getElementById("sarcastic").style.visibility = 'hidden';
+document.getElementById("complimentcont").style.visibility = 'visible';
+}
+function complimentresponse()
+{
+var img = document.getElementById("start");
+img.src="compliment response.png";
+}
+function to8compliment()
+{
+document.getElementById("complimentcont").style.visibility = 'hidden';
+document.getElementById("to8compliment").style.visibility = 'visible';
+}
+function image8compliment()
+{
+var img = document.getElementById("start");
+img.src="8 compliment.png";
+}
+
+
+// FINISHED
+function imagesarcastic()
+{
+var img = document.getElementById("start");
+img.src="sarcastic.png";
+}
+function sarcasticcont()
+{
+document.getElementById("compliment").style.visibility = 'hidden';
+document.getElementById("sarcastic").style.visibility = 'hidden';
+document.getElementById("sarcasticcont").style.visibility = 'visible';
+}
+function sarcasticresponse()
+{
+var img = document.getElementById("start");
+img.src="sarcastic response.png";
+}
+function imagesarcastic()
+{
+var img = document.getElementById("start");
+img.src="sarcastic.png";
+}
+function to8sarcastic()
+{
+document.getElementById("sarcasticcont").style.visibility = 'hidden';
+document.getElementById("to8sarcastic").style.visibility = 'visible';
+}
+function image8sarcastic()
+{
+var img = document.getElementById("start");
+img.src="8 sarcastic.png";
+}
+
+
+function totalkcont()
+{
+document.getElementById("to8sarcastic").style.visibility = 'hidden';
+document.getElementById("to8compliment").style.visibility = 'hidden';
+document.getElementById("talk").style.visibility = 'visible';
+document.getElementById("dontneed").style.visibility = 'visible';
+
+}
+function imagetalk()
+{
+var img = document.getElementById("start");
+img.src="talk.png";
+}
+function talkresponse()
+{
+var img = document.getElementById("start");
+img.src="9 talk.png";
+}
+function lasttalk()
+{
+document.getElementById("talk").style.visibility = 'hidden';
+document.getElementById("dontneed").style.visibility = 'hidden';
+document.getElementById("lasttalk").style.visibility = 'visible';
+}
+
+function imagedontneed()
+{
+var img = document.getElementById("start");
+img.src="dont need.png";
+}
+function dontneedresponse()
+{
+var img = document.getElementById("start");
+img.src="9 dont need.png";
+}
+function lastdontneed()
+{
+document.getElementById("talk").style.visibility = 'hidden';
+document.getElementById("dontneed").style.visibility = 'hidden';
+document.getElementById("lastdontneed").style.visibility = 'visible';
+}
+
+</script>
+
+<img id="start" src="6 start.png"/>
+<body>
+
+
+<!-- FINISHED -->
+<button id="no hate" style="width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="imageNoHate();noHatecont();">I don't hate her.</button>
+<button id="noHatecont" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="imageNoHateresponse();noHatecont();NoHateresponsecont()">...</button>
+<button id="start2nohate" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="image7nohate();NoHateresponsecont();start3optionsnohate();">...</button>
+
+
+<!-- FINISHED -->
+<button id="whoever" style="width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="imageWhoever();whoevercont();">I was with whoever.</button>
+<button id="whoevercont" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="imageWhoeverresponse();whoevercont();Whoeverresponsecont();">...</button>
+<button id="start2whoever" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="image7whoever();Whoeverresponsecont();start3optionswhoever();">...</button>
+
+
+<!-- FINISHED -->
+<button id="compliment" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="imagecompliment();start3optionsnohate();start3optionswhoever();complimentcont();">Is that a compliment?</button>
+<button id="complimentcont" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="complimentcont();complimentresponse();to8compliment()">...</button>
+<button id="to8compliment" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="image8compliment();to8compliment();totalkcont();">...</button>
+
+
+<!-- FINISHED -->
+<button id="sarcastic" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="start3optionswhoever();imagesarcastic();start3optionsnohate();sarcasticcont();">Are you being sarcastic?</button>
+<button id="sarcasticcont" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="sarcasticcont();sarcasticresponse();start3optionsnohate();to8sarcastic();">...</button>
+<button id="to8sarcastic" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="image8sarcastic();to8sarcastic();totalkcont();">...</button>
+
+
+
+<button id="talk" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="imagetalk();totalkcont();lasttalk();">I just talked to people</button>
+<button id="lastta
+
+lk" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="talkresponse();lasttalk();">...</button>
+
+<button id="dontneed" style="visibility:hidden; width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="imagedontneed();totalkcont();lastdontneed();">I don't need you with me</button>
+<button id="lastdontneed" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="dontneedresponse();lasttalk();">...</button>
+
+</body>

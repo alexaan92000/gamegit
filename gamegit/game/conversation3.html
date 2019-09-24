@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+//starting responce picture
+function startOfConvo ()
+{
+var img = document.getElementById ("start");
+img.src="quotejoking response.png";
+}
+//starting responce picture
+
+//2 optopns from geez joking
+function toOption2()
+{
+document.getElementById("startOfConvo").style.visibility = 'hidden'
+document.getElementById("belitting").style.visibility = 'visible'
+document.getElementById("jerk").style.visibility = 'visible'
+}
+
+function option1geezjoking ()
+{
+var img = document.getElementById ("start");
+img.src="belittling.png";
+}
+function option2geezjoking ()
+{
+var img = document.getElementById ("start");
+img.src="jerk.png";
+}
+//2 optopns from geez joking
+
+//belittling response
+function contConversation() 
+{
+document.getElementById("contconversation").style.visibility = 'visible'
+document.getElementById("belitting").style.visibility = 'hidden'
+document.getElementById("jerk").style.visibility = 'hidden'
+}
+
+function responseBelittling()
+{
+var img = document.getElementById ("start");
+img.src="belitting response.png";
+}
+//belittling response
+
+//jerk response
+function jerkResponse() 
+{
+document.getElementById("jerkResponse").style.visibility = 'visible'
+document.getElementById("belitting").style.visibility = 'hidden'
+document.getElementById("jerk").style.visibility = 'hidden'
+}
+
+function responseJerk()
+{
+var img = document.getElementById ("start");
+img.src="jerk response.png";
+}
+//jerk response
+
+//bringing up the past
+function ThePast() 
+{
+document.getElementById("bringingupthepast").style.visibility = 'visible'
+document.getElementById("contconversation").style.visibility = 'hidden'
+document.getElementById("jerkResponse").style.visibility = 'hidden'
+}
+
+
+function responseThePast()
+{
+var img = document.getElementById ("start");
+img.src="the past response.png";
+}
+//bringing up the past
+
+function NewConvo() 
+{
+document.getElementById("startnewconversation").style.visibility = 'hidden'
+document.getElementById("bringingupthepast").style.visibility = 'hidden'
+
+}
+
+
+</script>
+
+<img id="start"  src="quotejoking.png"/>
+
+<body>
+
+<!-- starting response picture -->
+<button id="startOfConvo" style="width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" 
+onclick="startOfConvo();toOption2();">...</button>
+<!-- starting response picture -->
+
+<!--1 option from geez joking -->
+<button id="belitting" style="visibility:hidden;width:262.5px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="option1geezjoking();toOption2();contConversation()">Belittling</button>
+<button id="contconversation" style="visibility:hidden; width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="contConversation();responseBelittling(); ThePast()">...</button>
+<!--1 option from geez joking -->
+
+<!--2 option from geez joking -->
+<button id="jerk" style="visibility:hidden;width:262.5px; height:126px; top:644px; position: absolute; left:270px; font-family: Arial; font-size: 28px" onclick="option2geezjoking();toOption2();jerkResponse();">jerk</button>
+<button id="jerkResponse" style="visibility:hidden;width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="jerkResponse(); responseJerk(); ThePast()">...</button>
+<!--2 option from geez joking -->
+
+<!--bringingupthepast-->
+<button id="bringingupthepast" style="visibility:hidden;width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="responseThePast();ThePast(); NewConvo()">You always bring up the past</button>
+<!--bringingupthepast-->
+
+<button id="startnewconversation" style="visibility:hidden;width:525px; height:126px; top:644px; position: absolute; left:8px; font-family: Arial; font-size: 28px" onclick="jerkResponse(); responseJerk(); NewConvo() ">...</button>
+
+
+
+
+</body>
